@@ -7,83 +7,128 @@
     <meta name="description" content="Homepage for my webpage profile">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>ProfilePage</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $('.nav-tabs a').click(function(){
+            $(this).tab('show');
+        })
+        $('.nav-tabs a[href="#"]').tab('show')
+
+        $('.nav-tabs a:work').tab('show')
+
+        $('.nav-tabs a:contactInfo').tab('show')
+    </script>
+
+    <title>My Profile</title>
     <style>
         .bg-1 {
-          background-color: #1abc9c; /* Green */
-          color: #ffffff;
+          background-color: #5BCEFA; /* Sky Blue */
+          color: #474e5d;
         }
         .bg-2 {
           background-color: #474e5d; /* Dark Blue */
-          color: #ffffff;
+          color: #F5A9B8;
         }
         .bg-3 {
           background-color: #ffffff; /* White */
           color: #555555;
+          
         }
         .container-fluid {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding: 35px;
         }
         </style>
 </head>
-<body>      
+<body class = "container-fluid bg-1">      
     <section>
-        <div class="container-fluid bg-1 text-center">
+        <div class="container-fluid text-center">
             <h3></h3>
-            <img src="images/profilepic.jpg" class="img-circle" alt="Bird">
+            <img src="images/profilepic.jpg" class="img-circle" alt="Me">
             <h3>Katherine Carver-Hardy</h3>
+            <h4>She/Her</h4>
         </div>
         <div class="container-fluid bg-2 text-center">
-            <h3>What Am I?</h3>
-            <p>Lorem ipsum..</p>
+            <h1 class="display-4 fw-bold text-body-emphasis">About Me</h1>
         </div>
     </section>
     <section>
-        <div class="container-fluid bg-3 text-center">
-            <h1 class="display-4 fw-bold text-body-emphasis">Centered Text</h1>
+        <div class="container-fluid bg-2 text-center">
             <div>
                 <p class="lead mb-4"></p>
-                <ul class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <li class="active btn btn-primary btn-lg px-4 me-sm-3">
-                        <a data-toggle="tab" 
-                        href="#work">Home</a>
+                <!-- Buttons -->
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="btn btn-lg px-4">
+                        <a data-toggle="tab" href="#workExperience" class="nav-link active button" aria-current="page">Work Experience</a>
                     </li>
-                    <li class="btn btn-outline-secondary btn-lg px-4">
-                        <a data-toggle="tab" 
-                        href="#contactInfo">About</a>
+                    <li class="btn btn-lg px-4">
+                        <a data-toggle="tab" href="#contactInfo" class="nav-link">Contact Info</a>
                     </li>
                 </ul>
-                
-                <div class="row text-center tab-pane" id="work">
-                    <div class="col-sm-4" >
-                      <p class="lead mb-4">Lorem ipsum..</p>
-                      
+                <!-- Content -->
+                <div class = "tab-content" id="myTabs">
+                    <!-- Contact Details -->
+                    <div class="container-fluid tab-pane fade show active" id="workExperience">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                            <p class="lead mb-4">1</p>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                            <p class="lead mb-4">Lorem ipsum..</p>
+                            </div>
+                            
+                            <div class="col-sm-4" >
+                            <p class="lead mb-4">Lorem ipsum..</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4 " >
-                      <p class="lead mb-4">Lorem ipsum..</p>
-                      
-                    </div>
-                    <div class="col-sm-4" >
-                      <p class="lead mb-4">Lorem ipsum..</p>
-                      
-                    </div>
-                </div>
-                <div class="row text-center tab-pane" id="contactInfo">
-                    <div class="col-sm-4" >
-                      <p class="lead mb-4">Lorem ipsum..</p>
-                      
-                    </div>
-                    <div class="col-sm-4 " >
-                      <p class="lead mb-4">Lorem ipsum..</p>
-                      
-                    </div>
-                    <div class="col-sm-4" >
-                      <p class="lead mb-4">Lorem ipsum..</p>
-                      
+                    <!-- Socials -->
+                    <div class="container-fluid row tab-pane fade" id="contactInfo">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>Work Email</h3>
+                                <h4 class="text-muted">KCarver-Hardy@SpartaGlobal.com</h4>
+                                <h1></h1>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>Work Phone</h3>
+                                <h4 class="text-muted">Currently Unavailable</h4>
+                            </div>
+                        </div>
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>My LinkedIn</h3>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>My GitHub</h3>
+                            </div>
+                        </div>
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <a class="lead mb-4" target="_blank" href="https://www.linkedin.com/in/katherine-carver-hardy-31b81816b/">
+                                    <img  alt = "LinkedInLogo" src = "images/LinkedInlogo.png" width = "100px"
+                                target="_blank" href="https://www.linkedin.com/in/katherine-carver-hardy-31b81816b/">
+                                </a>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <a class="lead mb-4" target="_blank" href="https://github.com/katabeth">
+                                    <img  alt = "GitHubLogo" src = "images/GitHublogo.png" width = "100px"
+                                    target="_blank" href="https://github.com/katabeth">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Calendar -->
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>Contact Hours</h3>
+                                <h4>Don't</h4>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
