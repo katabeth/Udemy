@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Katherine Carver-Hardy">
+    <meta name="description" content="Homepage for my webpage profile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>ProfilePage</title>
+    <style>
+        .bg-1 {
+          background-color: #1abc9c; /* Green */
+          color: #ffffff;
+        }
+        .bg-2 {
+          background-color: #474e5d; /* Dark Blue */
+          color: #ffffff;
+        }
+        .bg-3 {
+          background-color: #ffffff; /* White */
+          color: #555555;
+        }
+        .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        }
+        </style>
+</head>
+<body>      
+    <section>
+        <div class="container-fluid bg-1 text-center">
+            <h3></h3>
+            <img src="images/profilepic.jpg" class="img-circle" alt="Bird">
+            <h3>Katherine Carver-Hardy</h3>
+        </div>
+        <div class="container-fluid bg-2 text-center">
+            <h3>What Am I?</h3>
+            <p>Lorem ipsum..</p>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid bg-3 text-center">
+            <h1 class="display-4 fw-bold text-body-emphasis">Centered Text</h1>
+            <div>
+                <p class="lead mb-4"></p>
+                <ul class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <li class="active btn btn-primary btn-lg px-4 me-sm-3">
+                        <a data-toggle="tab" 
+                        href="#work">Home</a>
+                    </li>
+                    <li class="btn btn-outline-secondary btn-lg px-4">
+                        <a data-toggle="tab" 
+                        href="#contactInfo">About</a>
+                    </li>
+                </ul>
+                
+                <div class="row text-center tab-pane" id="work">
+                    <div class="col-sm-4" >
+                      <p class="lead mb-4">Lorem ipsum..</p>
+                      
+                    </div>
+                    <div class="col-sm-4 " >
+                      <p class="lead mb-4">Lorem ipsum..</p>
+                      
+                    </div>
+                    <div class="col-sm-4" >
+                      <p class="lead mb-4">Lorem ipsum..</p>
+                      
+                    </div>
+                </div>
+                <div class="row text-center tab-pane" id="contactInfo">
+                    <div class="col-sm-4" >
+                      <p class="lead mb-4">Lorem ipsum..</p>
+                      
+                    </div>
+                    <div class="col-sm-4 " >
+                      <p class="lead mb-4">Lorem ipsum..</p>
+                      
+                    </div>
+                    <div class="col-sm-4" >
+                      <p class="lead mb-4">Lorem ipsum..</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
